@@ -7,6 +7,7 @@ import numpy as np
 def getSentencesFromFiles(dataDir):
     '''Read text files in a directory
        and return a list of all sentences
+       Doing this for huge data will be suicidal
     '''
     sentDetector = ntd.load('tokenizers/punkt/english.pickle')
     allSentences=[]
